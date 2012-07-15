@@ -1,0 +1,43 @@
+CHANGE LOG
+
+JsonRpc2-Server, Copyright (c) Vladimir Dzhuvinov, 2010 - 2011
+
+
+version 1.0 (2010-05-18)
+	* First release.
+
+version 1.1 (2010-10-10)
+	* Renames class RequestInfo to RequestContext.
+
+version 1.2 (2010-11-23)
+	* Renames package.
+	* Removes dependency on org.apache.commons.lang.
+
+version 1.3 (2011-03-05)
+	* Major API naming changes.
+	* Adds support for handling JSON-RPC 2.0 notifications.
+	* Allows for undefined (null) message context arguments in
+	  Dispatcher.dispatch() and {Request|Notification}Handler.process() 
+	  methods.
+
+version 1.4 (2011-07-11)
+	* Raises minimal JSON-RPC 2.0 Base requirement to version 1.19.
+	* Adds support for reporting request processing time by adding a 
+	  non-standard "_procTime" attribute to the JSON-RPC 2.0 response.
+
+version 1.4.1 (2011-07-15)
+	* Renames the non-standard processing time attribute to "xProcTime".
+	* Documentation improvements.
+
+version 1.5 (2012-02-19)
+	* Fixes a bug in MessageContext getter method for 
+	  java.security.Principal.
+	* MessageContext allows storing of multiple java.security.Principal
+	  identities.
+	* Updates JSON-RPC 2.0 Base JAR to 1.25 (JSON Smart 1.1).
+
+version 1.5.1 (2012-04-03)
+	* Updates JSON-RPC 2.0 Base JAR to 1.25.1 (JSON Smart 1.1.1).
+
+version 1.5.2 (2012-07-15)
+	* Add pom.xml.
